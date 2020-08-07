@@ -42,7 +42,7 @@ class TestCalc:
     def test_add(self,a,b,expect):
         try:
             # 调用它的相加add()方法
-            result = calc = self.calc.add(a,b)
+            result = self.calc.add(a,b)
             # 判断result为小数的时候使用round取小数点后两位
             if isinstance(result,float):
                 result = round(result,2)
