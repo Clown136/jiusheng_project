@@ -49,7 +49,7 @@ class TongLao:
 lao = TongLao()
 # 传入童姥的血量和武力值参数
 lao_hp,lao_power = (1000,200)
-# see_people的方法 传入name参数为 李秋水
+# see_people的方法 传入name参数为“丁春秋”
 lao.see_people("丁春秋")
 # 使用折梅手的方法传入敌人的血量和武力值
 lao.fight_zms(3000,300)
