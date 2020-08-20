@@ -15,7 +15,7 @@ class TestLiulan:
     def teradown(self):
         self.driver.quit()
 
-    # shelve python 内置模块，相当于小型的数据库
+    
     def test_cookie(self):
 
         # 带有登录信息的cookies
