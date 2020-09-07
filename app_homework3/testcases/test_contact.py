@@ -39,8 +39,8 @@ class TestContact:
         # 要删除联系人的姓名
         contact = 'cxl11'
         # 1、打开app到首页 2、从首页跳转到通讯录 3、从通讯录跳转到搜索框页面 3、从搜索框页面跳转到个人信息页面 4、点击个人信息页面更多
-        # 5、点击编辑成员 6、添砖到成员资料页面 7、点击删除成员 8、点击确定 9、完成后返回到自动返回到搜索框页面 10、搜索框页面点击返回
-        # 11、跳转到通讯录页面 12、获取联系人列表信息
+        # 5、点击编辑成员 6、添砖到成员资料页面 7、点击删除成员 8、点击确定 完成后返回到自动返回到搜索框页面 9、搜索框页面点击返回
+        # 9、搜索框页面点击返回跳转到通讯录页面 12、获取联系人列表信息
         mylist1 = self.main.goto_addressbook().goto_search().edit_search(contact).goto_personal_information(contact)\
             .goto_detailed_information().goto_AddMembersData().delete_members().click_determine()\
             .return_address_book().get_member_list()
