@@ -29,7 +29,7 @@ class TestContact:
         # 成员号码
         phonenum = "15901012214"
         # 1、打开app到首页 2、从首页跳转到通讯录 3、从通讯录跳转到添加成员 4、从添加成员添砖到填写成员资料页面 5、填写姓名 6、填写性别
-        # 7、填写手机号码 8、点击保存 9、弹出toast页面
+        # 7、填写手机号码 8、点击保存 9、弹出toast弹窗
         mypage = self.main.goto_addressbook().goto_add_members().goto_addmembersdata().edit_name(name).edit_gender(gender)\
             .edit_phonenum(phonenum).click_save().get_toast()
         # 断言
