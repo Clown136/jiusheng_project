@@ -45,7 +45,7 @@ class TestContact:
             .goto_detailed_information().goto_AddMembersData().delete_members().click_determine()\
             .return_address_book().get_member_list()
         # 断言
-        assert "cxl12" not in mylist1
+        assert "cxl11" not in mylist1
 
 
 
